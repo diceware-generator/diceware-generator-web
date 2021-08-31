@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Code Pro';
+}
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1545975401-1bac6136ec13?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main.container {
+  background: rgba(160, 154, 154, 0.893);
+  max-width: 500px;
+  min-height: 30vh;
+  width: 30rem;
+  padding: 2rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+main h2 {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  position: relative;
+  color: rgb(63, 2, 2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.generator {
+  position: relative;
+}
+
+.generator .underline::before {
+  content: ' ';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+  background: rgb(38, 38, 38);
+  border-radius: 4px;
+}
+
+.generator input{
+  width: 100%;
+}
+
+.generator .underline::after {
+  content: ' ';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+  background: linear-gradient(to left, rgb(189, 123, 10), rgb(92, 10, 10));
+  border-radius: 4px;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+  transform-origin: left;
+}
+
+.generator input:focus ~ .underline::after {
+  transform: scaleX(1);
+}
+
+.generator input {
+  outline: none;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.7);
+  background: rgba(160, 154, 154, 0.42);
+}
+
+.generator input::placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+form input[type='submit'] {
+  margin-top: 2rem;
+  padding: 0.4rem;
+  background: linear-gradient(to left, rgb(189, 123, 10), rgb(92, 10, 10));
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+form input[type='submit']:hover {
+  letter-spacing: 0.5px;
+  background: linear-gradient(to right, rgb(189, 123, 10), rgb(92, 10, 10));
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.footer .elements {
+  padding: 0.4rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.footer .elements button i {
+  margin: 0 0.5rem;
+  width: 15px;
+}
+
+.footer .elements button {
+  background: rgba(238, 130, 238, 0) !important;
+  color: #ffffff !important;
+  font-size: 1rem;
+  width: 100%;
+  margin-left:;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.footer .elements.copy {
+  background: linear-gradient(to right, rgb(125, 70, 4), rgb(203, 125, 8));
+  transition: all 0.3s ease;
+}
+
+.footer .elements.copy button:hover {
+  letter-spacing: 0.7px;
+}
+
+.footer .elements.copy:hover {
+  background: linear-gradient(to left, rgb(125, 70, 4), rgb(203, 125, 8));
+}
+
+.footer .elements.unlock {
+  background: linear-gradient(to right, rgb(62, 1, 1), rgb(160, 5, 5));
+  transition: all 0.3s ease;
+}
+
+.footer .elements.unlock button:hover {
+  letter-spacing: 0.7px;
+  background: linear-gradient(to left, rgb(62, 1, 1), rgb(160, 5, 5));
+}
+
+.footer .elements.unlock:hover {
+  background: linear-gradient(to left, rgb(62, 1, 1), rgb(160, 5, 5));
+}
