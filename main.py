@@ -10,5 +10,5 @@ def index():
     return render_template('index.html', message=diceware_password)
 
 def get_diceware():
-    w = 'dict/dicionario-pt-low.txt'
+    w = [s.split()[0] for s in open('dict/dicionario-pt-low.txt')]
     return ' '.join(random.SystemRandom().choice(w) for i in range(6))
