@@ -196,5 +196,18 @@ h3{
   margin-top: 50px;
   color: white;
   text-align: center;
-  font-size: 15px;
+  font-size: 17px;
+}
+
+.social{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0 0 0 12rem;
+}
+
+.social i{
+  color: #ffffff;
+  font-size: 30px;
+  margin-top: 8px;
 }
