@@ -9,7 +9,7 @@
 }
 
 body {
-  background-image: url(https://images.unsplash.com/photo-1545975401-1bac6136ec13?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+  background-image: url(../dice.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -20,20 +20,22 @@ body {
 }
 
 main.container {
-  background: rgba(160, 154, 154, 0.893);
-  max-width: 500px;
+  background: rgba(14, 5, 8, 0.927);
+  max-width: 1100px;
   min-height: 30vh;
-  width: 30rem;
+  width: 40rem;
   padding: 2rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
+  border-radius: 20px;
+  margin: 2rem auto;
 }
 
 main h2 {
+  text-align: center;
   font-weight: 600;
   margin-bottom: 2rem;
   position: relative;
-  color: rgb(63, 2, 2);
+  color: rgb(255, 255, 255);
 }
 
 form {
@@ -56,10 +58,6 @@ form {
   border-radius: 4px;
 }
 
-.generator input{
-  width: 100%;
-}
-
 .generator .underline::after {
   content: ' ';
   position: absolute;
@@ -67,7 +65,7 @@ form {
   width: 100%;
   bottom: -5px;
   left: 0;
-  background: linear-gradient(to left, rgb(189, 123, 10), rgb(92, 10, 10));
+  background: linear-gradient(to left, rgb(176, 27, 104), rgb(50, 0, 20));
   border-radius: 4px;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
@@ -81,8 +79,9 @@ form {
 .generator input {
   outline: none;
   font-size: 1rem;
-  color: rgba(0, 0, 0, 0.7);
-  background: rgba(160, 154, 154, 0.42);
+  color: rgb(255, 255, 255);
+  width: 100%;
+  background: rgba(18, 18, 18, 0);
 }
 
 .generator input::placeholder {
@@ -90,9 +89,11 @@ form {
 }
 
 form input[type='submit'] {
+  margin: 0 auto;
+  width: 400px;
   margin-top: 2rem;
   padding: 0.4rem;
-  background: linear-gradient(to left, rgb(189, 123, 10), rgb(92, 10, 10));
+  background: linear-gradient(to left, rgb(86, 13, 36), rgb(0, 0, 0));
   cursor: pointer;
   color: white;
   font-size: 1rem;
@@ -103,7 +104,7 @@ form input[type='submit'] {
 
 form input[type='submit']:hover {
   letter-spacing: 0.5px;
-  background: linear-gradient(to right, rgb(189, 123, 10), rgb(92, 10, 10));
+  background: linear-gradient(to right, rgb(86, 13, 36), rgb(0, 0, 0));;
 }
 
 .footer {
@@ -116,9 +117,9 @@ form input[type='submit']:hover {
   padding: 0.4rem;
   border-radius: 4px;
   font-size: 1rem;
-  width: 100%;
+  width: 400px;
   cursor: pointer;
-  margin-top: 1rem;
+  margin: 1rem auto;
 }
 
 .footer .elements button i {
@@ -130,15 +131,14 @@ form input[type='submit']:hover {
   background: rgba(238, 130, 238, 0) !important;
   color: #ffffff !important;
   font-size: 1rem;
-  width: 100%;
-  margin-left:;
+  width: 400px;
   cursor: pointer;
   transition: all 0.3s ease;
   border-color: rgba(255, 255, 255, 0);
 }
 
 .footer .elements.copy {
-  background: linear-gradient(to right, rgb(125, 70, 4), rgb(203, 125, 8));
+  background: linear-gradient(to right, rgb(86, 13, 36), rgb(0, 0, 0));
   transition: all 0.3s ease;
 }
 
@@ -147,19 +147,54 @@ form input[type='submit']:hover {
 }
 
 .footer .elements.copy:hover {
-  background: linear-gradient(to left, rgb(125, 70, 4), rgb(203, 125, 8));
+  background: linear-gradient(to left, rgb(86, 13, 36), rgb(0, 0, 0));
 }
 
 .footer .elements.unlock {
-  background: linear-gradient(to right, rgb(62, 1, 1), rgb(160, 5, 5));
+  background: linear-gradient(to right, rgb(86, 13, 36), rgb(0, 0, 0));
   transition: all 0.3s ease;
 }
 
 .footer .elements.unlock button:hover {
   letter-spacing: 0.7px;
-  background: linear-gradient(to left, rgb(62, 1, 1), rgb(160, 5, 5));
+  background: linear-gradient(to left, rgb(86, 13, 36), rgb(0, 0, 0));
 }
 
 .footer .elements.unlock:hover {
-  background: linear-gradient(to left, rgb(62, 1, 1), rgb(160, 5, 5));
+  background: linear-gradient(to left, rgb(86, 13, 36), rgb(0, 0, 0));
+}
+
+#section2{
+  background-color: aquamarine;
+  width: 100%;
+  height: 100%;
+}
+
+.box-diceware{
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+
+.info{
+  width: 35rem;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 30px 5px rgb(19, 1, 9);
+  background: linear-gradient(to left, rgb(58, 17, 30), rgb(0, 0, 0));
+  margin: 1rem auto;
+  color: white;
+  text-align: justify;
+}
+
+h3{
+  text-align: center;
+  font-size: 21px;
+}
+
+.autor p{
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
 }
