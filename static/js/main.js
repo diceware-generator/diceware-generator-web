@@ -10,3 +10,13 @@ function hydePass() {
   } else {
     formPass.type = "text";
 }}
+
+async function getNewPass() {
+  const url = "/api/get-diceware";
+  await fetch(url)
+      .then(
+          response => response.text() 
+      ).then(
+          html => {document.getElementById('password').value = html}
+      );
+}
