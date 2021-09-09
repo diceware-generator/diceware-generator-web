@@ -88,7 +88,7 @@ form {
   color: rgba(0, 0, 0, 0.7);
 }
 
-form input[type='submit'] {
+form button {
   margin: 0 auto;
   width: 400px;
   margin-top: 2rem;
@@ -102,7 +102,7 @@ form input[type='submit'] {
   transition: all 0.3s ease;
 }
 
-form input[type='submit']:hover {
+form button:hover {
   letter-spacing: 0.5px;
   background: linear-gradient(to right, rgb(86, 13, 36), rgb(0, 0, 0));;
 }
